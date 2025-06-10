@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=demo
+#SBATCH --job-name=simulation
 #SBATCH --account=biostat
 #SBATCH --partition=students-12c128g
 
