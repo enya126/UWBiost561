@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 )
 set.seed(10)
 library(testthat)
+library(UWBiost561)
 ```
 
 # Instructions
@@ -117,7 +118,7 @@ rowSums(1:5)
 Note 4: If you would like to test for things that weren't in your HW3, feel free to do so. (Your tests for this question don't literally need to be the same ones you created for HW3.)
 
 ### Test Implementation 5
-```{r}
+```{r, error = TRUE}
 library(testthat)
 context("Testing find maximal partial clique function")
 
@@ -193,7 +194,7 @@ test_that("empty adjacency matrix returns minimal clique", {
 
 ```
 ### Test Implementation 10
-```{r}
+```{r, error = TRUE}
 library(testthat)
 context("Testing find maximal partial clique function")
 
@@ -254,6 +255,7 @@ test_that("Edge case: small graph with full clique", {
   expect_equal(result$edge_density, 1)
 })
 
+##### THIS TEST FAILED #####
 # test a corner case of a empty adjacency matrix
 test_that("empty adjacency matrix returns minimal clique", {
   adj <- diag(1, nrow = 10)  # 10 nodes, no edges
@@ -461,6 +463,8 @@ I will release the final project specifications (again, which involve making a P
 
 Please write (in one to five sentences) what you are thinking of doing for your final project. If your answer hasn't changed since HW3, you can copy-paste your answer from HW3 into this question for HW4.
 
+I talked with Kevin during office hours, and I decided to use my UWBiost561 package to do my final project. I will follow the instructions and create a website for it. 
+
 # Q5: Feedback (Optional)
 
 This "question" is an additional way for students to communicate with instructors. 
@@ -471,4 +475,8 @@ Your feedback can help shape the course for the rest of this quarter and
 future years. Please be mindful and polite when providing feedback.
 You may leave this question blank.
 
+Hi Kevin, I have a question regarding this HW4. I passed the devtools::check(). I ran simulation files locally, and it looks good. But I did not get any .Rout on the server by command sbatch HW4_simulation_execute.slurm. 
 
+I was thinking of trials exceeding the time limitation of 30s, but I'm not sure if this is the issue or how to diagnose it.
+Could you possibly help with this problem? 
+Thank you so much and apologize for the late submission. 
