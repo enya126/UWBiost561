@@ -54,6 +54,6 @@ date_of_run <- Sys.time()
 session_info <- devtools::session_info()
 
 save(level_trial_list, # save your results
-     alpha_vec,  # save which alphas you used
+     n_vec,  # save the number of nodes I used
      date_of_run, session_info,
      file = "~/HW4_simulation.RData")

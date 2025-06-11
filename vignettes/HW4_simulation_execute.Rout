@@ -89,9 +89,10 @@ Type 'q()' to quit R.
 > session_info <- devtools::session_info()
 > 
 > save(level_trial_list, # save your results
-+      alpha_vec,  # save which alphas you used
++      n_vec,  # save the number of nodes I used
 +      date_of_run, session_info,
 +      file = "~/HW4_simulation.RData")
-Error in save(level_trial_list, alpha_vec, date_of_run, session_info,  : 
-  object ‘alpha_vec’ not found
-Execution halted
+> 
+> proc.time()
+   user  system elapsed 
+449.172   6.128 455.889 
