@@ -5,6 +5,10 @@
 #' @param clique_edge_density the edge density among the nodes in the clique.
 #'
 #' @return a list named adj_mat
+#' @examples
+#' # call the function to generate a 10*10 adjacency matrix
+#' generate_partial_clique(10,0.5,0.5)
+#'
 #' @export
 generate_partial_clique <- function(n, clique_fraction, clique_edge_density){
   # check inputs
@@ -40,3 +44,4 @@ generate_partial_clique <- function(n, clique_fraction, clique_edge_density){
 
   return(list(adj_mat = adj_mat))
 }
+generate_partial_clique(10,0.5,0.5)

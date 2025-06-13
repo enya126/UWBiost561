@@ -19,3 +19,8 @@ a list named adj_mat
 \description{
 Generate a partial clique
 }
+\examples{
+# call the function to generate a 10*10 adjacency matrix
+generate_partial_clique(10,0.5,0.5)
+
+}

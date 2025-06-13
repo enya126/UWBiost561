@@ -17,3 +17,14 @@ a list containing clique_idx and edge density
 \description{
 Find the maximal partial clique in an adjacency matrix
 }
+\examples{
+# Create a small 5*5 valid adjacency matrix
+mat <- matrix(0,nrow=5, ncol=5)
+diag(mat) <- 1
+mat[1,2] <- mat[2,1] <- 1
+mat[3,4] <- mat[4,3] <- 1
+
+# Call the function
+compute_maximal_partial_clique(mat, alpha = 0.9)
+
+}

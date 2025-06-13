@@ -1,0 +1,31 @@
+---
+title: "UWBiost561 Package Example"
+author: "Enya Liu"
+date: "2025-06-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Generate a matrix
+```{r}
+library(UWBiost561)
+mat <- generate_partial_clique(5,0.5,0.5)
+str(mat$adj_mat)
+```
+# Compute the maximal partial clique in the matrix
+```{r}
+result <- compute_maximal_partial_clique(mat$adj_mat, alpha = 0.9)
+print(result)
+```
+# Visualize the adjacency matrix
+```{r}
+mat <- matrix(0, nrow = 5, ncol = 5)
+diag(mat) <- 1
+mat[1,2] <- mat[2,1] <- 1
+mat[3,4] <- mat[4,3] <- 1
+visualize_partial_clique_heatmap(mat, alpha = 0.9)
+```
+
