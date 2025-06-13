@@ -3,7 +3,7 @@ This package can generate an adjacency matrix with a partial clique and find a o
 
 - The URL to the GitHub is: https://github.com/enya126/UWBiost561
 
-- The URL to the Pkgdown webpage is: https:///enya126.github.io/UWBiost561
+- The URL to the Pkgdown webpage is: https:///enya126.github.io/UWBiost561/
 
 # How to install
 This package is called `UWBiost561`. To install, run the following code (in R):
